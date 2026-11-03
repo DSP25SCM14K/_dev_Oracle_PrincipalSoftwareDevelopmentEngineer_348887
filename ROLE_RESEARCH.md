@@ -13,9 +13,9 @@ This is a principal-level individual-contributor role with broad technical influ
 The emphasis on durability workflows and fault isolation suggests that failure handling is a first-class design concern. Practical work can include testing partial failures, reasoning about consistency and idempotency, preserving safe retries, tuning Java/JVM behavior, and reducing the time needed to detect, isolate, and remediate incidents. That interpretation is an inference from the listed responsibilities and Oracle’s public reliability guidance; it does not claim knowledge of a private team charter.
 
 ## Oracle and OCI context
-Oracle Cloud Infrastructure presents its cloud platform as a set of compute, storage, networking, database, and container services. Its public Object Storage materials describe a highly durable, scalable service for unstructured data. OCI’s architecture guidance organizes design around security and compliance, reliability and resilience, performance and cost optimization, operational efficiency, and distributed cloud. Oracle’s reliability guidance recommends avoiding single points of failure and describes disaster recovery across regions using asynchronous replication for infrastructure and data services.
+Oracle Cloud Infrastructure presents its cloud platform as a set of compute, storage, networking, database, and container services. Oracle describes OCI Object Storage as strongly consistent and scalable, and states that its durability design uses redundancy, failure isolation, fast recovery, and service-managed replication or erasure coding across storage servers and failure-isolation groups. Oracle’s public architecture guidance also organizes design around security and compliance, reliability and resilience, performance and cost optimization, operational efficiency, and distributed cloud. Its reliability guidance recommends avoiding single points of failure and describes disaster recovery across regions using asynchronous replication for infrastructure and data services.
 
-For this role, those themes connect directly to data placement, replication policy, failure-domain boundaries, recovery behavior, and operational controls. A successful storage design has to preserve clear contracts for clients while making changes, failures, and repair observable to the people operating it.
+For this role, those themes connect directly to data placement, replication policy, failure-domain boundaries, recovery behavior, and operational controls. A successful storage design has to preserve clear contracts for clients while making changes, failures, and repair observable to the people operating it. Oracle’s published durability characteristics describe its platform, not the candidate’s personal results.
 
 ## Resume-to-role evidence
 The supplied resume gives concrete evidence that maps to the posting:
@@ -32,6 +32,7 @@ The strongest portfolio anchors are **Strata**, a C++ distributed object-storage
 
 ## Public sources
 - [Oracle Careers — requisition 348887](https://careers.oracle.com/en/sites/jobsearch/job/348887/)
+- [OCI Object Storage FAQ](https://www.oracle.com/cloud/storage/object-storage/faq/)
 - [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/)
 - [OCI Cloud Architecture Center](https://www.oracle.com/cloud/architecture-center/)
 - [Oracle Cloud Adoption Framework — Extreme Reliability](https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/extreme-reliability.htm)
