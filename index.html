@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111b">
+<meta name="description" content="Dev Kumar — Principal software engineer building durable, globally distributed storage and infrastructure systems.">
+<title>Dev Kumar — Distributed Storage & Core Infrastructure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="topology" aria-hidden="true"></canvas>
+<header class="nav shell"><a class="wordmark" href="#home" aria-label="Dev Kumar home"><span class="mark">D<span>.</span></span><span>DEV KUMAR</span></a><nav aria-label="Main navigation"><a href="#systems">Systems</a><a href="#experience">Experience</a><a href="#work">Selected work</a></nav><a class="nav-cta" href="mailto:devpatna2017@gmail.com">Let’s connect <span>↗</span></a></header>
+<main>
+<section class="hero shell" id="home">
+<div class="hero-copy reveal"><div class="eyebrow"><span class="pulse"></span> DISTRIBUTED SYSTEMS · OBJECT STORAGE · CORE INFRASTRUCTURE</div>
+<h1>Durable data.<br><span class="accent">Distributed by design.</span></h1>
+<p class="hero-lede">I build highly available storage and infrastructure services across regions. I care about the details that make systems dependable: clear consistency guarantees, graceful recovery, measurable performance, and operations engineers can trust.</p>
+<div class="rotating-line"><span class="mono-label">ENGINEERING /</span><span id="rotatingText">Multi-region reliability at 99.99% availability</span><span class="cursor">_</span></div>
+<div class="hero-actions"><a class="button button-primary" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="mailto:devpatna2017@gmail.com">Get in touch <span>↗</span></a></div>
+<div class="hero-social"><a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode ↗</a></div>
+</div>
+<div class="hero-art reveal" aria-label="Animated conceptual object-storage architecture diagram">
+<div class="art-topline"><span>OBJECT STORAGE / SYSTEM MAP</span><span class="live"><i></i> DURABILITY IN MOTION</span></div>
+<svg class="system-map" viewBox="0 0 620 500" role="img" aria-labelledby="mapTitle mapDesc">
+<title id="mapTitle">Distributed object storage system map</title><desc id="mapDesc">A conceptual system map showing clients, metadata quorum, data placement across three availability zones, repair, and observability. This is an illustrative portfolio diagram, not Oracle architecture or live service telemetry.</desc>
+<defs><linearGradient id="lineFade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#46d6ed" stop-opacity=".95"/><stop offset="1" stop-color="#f3b96e" stop-opacity=".2"/></linearGradient><radialGradient id="coreGlow"><stop stop-color="#46d6ed" stop-opacity=".3"/><stop offset="1" stop-color="#46d6ed" stop-opacity="0"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="15"/></filter></defs>
+<circle cx="310" cy="250" r="165" fill="url(#coreGlow)" filter="url(#blur)"/>
+<path class="orbit orbit-a" d="M95 250C120 60 500 62 525 250S400 440 95 250Z"/><path class="orbit orbit-b" d="M95 250C240 430 390 400 525 250S235 70 95 250Z"/>
+<path class="connector" d="M155 150 310 250 465 150M155 350 310 250 465 350M155 150 155 350M465 150 465 350"/>
+<circle class="node node-main" cx="310" cy="250" r="58"/><circle class="node" cx="155" cy="150" r="38"/><circle class="node" cx="465" cy="150" r="38"/><circle class="node" cx="155" cy="350" r="38"/><circle class="node" cx="465" cy="350" r="38"/>
+<text x="310" y="246" text-anchor="middle" class="node-title">METADATA</text><text x="310" y="267" text-anchor="middle" class="node-sub">QUORUM · ROUTING</text>
+<text x="155" y="145" text-anchor="middle" class="node-title">CLIENT</text><text x="155" y="164" text-anchor="middle" class="node-sub">WRITE · READ</text>
+<text x="465" y="145" text-anchor="middle" class="node-title">ZONE A</text><text x="465" y="164" text-anchor="middle" class="node-sub">PLACEMENT</text>
+<text x="155" y="345" text-anchor="middle" class="node-title">ZONE B</text><text x="155" y="364" text-anchor="middle" class="node-sub">REPLICATION</text>
+<text x="465" y="345" text-anchor="middle" class="node-title">ZONE C</text><text x="465" y="364" text-anchor="middle" class="node-sub">REPAIR</text>
+<circle class="packet" r="5" fill="#f3b96e"><animateMotion dur="3.8s" repeatCount="indefinite" path="M155 150 310 250 465 150"/></circle><circle class="packet" r="4" fill="#46d6ed"><animateMotion dur="4.5s" repeatCount="indefinite" path="M465 350 310 250 155 350"/></circle>
+<text x="22" y="28" class="map-coord">METADATA · PLACEMENT · REPLICATION</text><text x="598" y="475" text-anchor="end" class="map-coord">WRITE → PROTECT → REPAIR</text></svg>
+<div class="art-bottomline"><span>CONSISTENCY · DURABILITY · RECOVERY</span><span>TELEMETRY <b>ON</b> <i class="tiny-bars"><u></u><u></u><u></u><u></u><u></u></i></span></div>
+<div class="float-chip chip-a"><span class="chip-icon">↗</span><div><b>99.99%</b><small>AVAILABILITY</small></div></div><div class="float-chip chip-b"><span class="chip-icon">⌁</span><div><b>0 data loss</b><small>3 ZONE FAILURE SIMULATIONS</small></div></div></div>
+<div class="hero-index mono-label">01 — SYSTEMS THAT KEEP DATA AVAILABLE</div></section>
+<section class="metrics shell reveal" aria-label="Engineering outcomes"><div class="metric"><b>99.99%</b><span>availability on a multi-region storage service</span></div><div class="metric"><b>0</b><span>data loss across 3 simulated zone failures</span></div><div class="metric"><b>2.8×</b><span>throughput after Java and JVM optimization</span></div><div class="metric"><b>−45%</b><span>p99 latency and mean time to recovery</span></div></section>
+<section class="section shell" id="systems"><div class="section-heading reveal"><div><span class="section-no">01 / ENGINEERING APPROACH</span><h2>Design for failure.<br><em>Make recovery routine.</em></h2></div><p class="section-intro">Durability is a sequence of decisions, not a checkbox. I work from metadata and placement through replication, repair, and on-call signals—then validate the whole path under load and failure.</p></div>
+<div class="architecture-panel reveal"><div class="diagram-head"><span>OBJECT LIFECYCLE / CONCEPTUAL MODEL</span><span class="diagram-caption">ACCEPT → PLACE → PROTECT → REPAIR</span></div>
+<div class="architecture-flow"><article class="flow-card"><div class="flow-number">01</div><div class="flow-icon">⇥</div><h3>Accept safely</h3><p>Stable APIs, idempotent requests, and asynchronous workflows make retries predictable.</p><span class="flow-tag">INGEST</span></article><div class="flow-link"><span></span>›</div><article class="flow-card"><div class="flow-number">02</div><div class="flow-icon">◇</div><h3>Place with intent</h3><p>Metadata and placement decisions distribute objects across independent failure domains.</p><span class="flow-tag">ROUTE</span></article><div class="flow-link"><span></span>›</div><article class="flow-card"><div class="flow-number">03</div><div class="flow-icon">▧</div><h3>Protect data</h3><p>Replication, erasure coding, and lifecycle policy preserve durability as hardware changes.</p><span class="flow-tag">DURABILITY</span></article><div class="flow-link"><span></span>›</div><article class="flow-card"><div class="flow-number">04</div><div class="flow-icon">↻</div><h3>Repair and learn</h3><p>Observability, fault testing, and automated remediation shorten incidents and prevent repeats.</p><span class="flow-tag">RECOVERY</span></article></div>
+<div class="diagram-foot"><span class="pulse"></span> A PRACTICE OF MEASUREMENT, FAILURE TESTING, AND CONTINUOUS IMPROVEMENT</div></div></section>
+<section class="section section-experience" id="experience"><div class="shell"><div class="section-heading reveal"><div><span class="section-no">02 / EXPERIENCE</span><h2>From data platforms<br><em>to distributed storage.</em></h2></div><p class="section-intro">8+ years building backend, cloud, and distributed systems. I enjoy the hard parts: reason about guarantees, measure bottlenecks, and help teams turn operational learning into safer designs.</p></div>
+<div class="timeline">
+<article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-head"><div><span class="timeline-date">MAR 2025 — PRESENT · CHICAGO</span><h3>Sprouts AI</h3><p class="role">Software Engineer · Distributed Systems and Storage Infrastructure</p></div><span class="company-index">01</span></div><ul class="impact-list">
+<li>Sustained 99.99% availability and sub-150 ms p99 latency at 5x peak traffic, measured by SLO dashboards, architecting multi-region Java object metadata/data placement service with Raft leader election and quorum replication.</li>
+<li>Zero data loss across 3 simulated zone failures, durability audits, by building replication, erasure coding repair, object lifecycle workflows with idempotent async Kafka processing.</li>
+<li>Throughput 2.8x and p99 latency -45%, load tests, via profiling concurrent Java, tuning JVM GC/memory and removing lock contention.</li>
+<li>MTTR -45%, paged incidents -35%, postmortems, by building metrics/logging/tracing/alerts/automated remediation and preventing recurrence in production.</li>
+<li>Zero unauthorized access incidents, security audits, embedding authentication/authorization/encryption with security teams, mentoring 5 engineers through design reviews.</li></ul></article>
+<article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-head"><div><span class="timeline-date">AUG 2023 — MAR 2025 · CHICAGO</span><h3>Resilience Inc</h3><p class="role">Software Engineer · Cloud Infrastructure and Reliability</p></div><span class="company-index">02</span></div><ul class="impact-list">
+<li>99.99% uptime and RPO &lt;1 minute, DR drills, cross-region DR, async replication, automatic failover/fault isolation cells for Java/Go storage services.</li>
+<li>Ingestion throughput 3x, load test, REST/gRPC clean extensible backward-compatible APIs with idempotency keys, retry backoff, event-driven Kafka processing.</li>
+<li>Caught 25+ consistency/durability defects before prod via unit/integration/E2E/fault-injection tests of partitions/leader failover/eventual consistency.</li>
+<li>Deployment -60%, zero high-impact regressions through CI/CD/Terraform/Kubernetes/canary health gates/rollback.</li>
+<li>Hot-partition incidents -70% by leading cross-team metadata sharding with storage/networking/ops; design docs and capacity planning.</li></ul></article>
+<article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-head"><div><span class="timeline-date">APR 2018 — AUG 2023</span><h3>Tata Steel</h3><p class="role">Software Engineer · Java Backend and Data Platforms</p></div><span class="company-index">03</span></div><ul class="impact-list">
+<li>API response 40% faster and uptime 99.95% via production Java services and REST APIs, OOP/design patterns/caching/load balancing.</li>
+<li>Zero data loss across two datacenter hardware failures via DB replication/backups/automated recovery.</li>
+<li>Batch processing time -50% via concurrent Java pipelines and async message queue processing.</li>
+<li>Undetected failures -50%, repeat incidents -35% via central logs/metrics/dashboards/alerts, root-cause analysis leadership.</li>
+<li>Test coverage 45→85%, production defects -30% through unit/integration testing standards, code reviews, mentorship of 6 engineers.</li></ul></article>
+</div></div></section>
+<section class="section shell" id="work"><div class="section-heading reveal"><div><span class="section-no">03 / PROJECTS</span><h2>Systems, prototypes<br><em>and ideas made concrete.</em></h2></div><p class="section-intro">A broad engineering practice, with an emphasis on the foundations beneath dependable services: storage, operating systems, event flows, and infrastructure.</p></div>
+<div class="project-tools reveal"><label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Filter projects by name or technology" aria-label="Filter projects"></label><span class="project-count" id="projectCount">23 PROJECTS</span></div><div class="project-grid" id="projectGrid"></div><p class="no-results" id="noResults" hidden>No projects match that search.</p></section>
+<section class="section publication-section"><div class="shell publication reveal"><div><span class="section-no">04 / RESEARCH &amp; LEARNING</span><h2>Research,<br><em>put to work.</em></h2><p>Research sharpens the questions behind a design. I value measurable comparisons, clear evidence, and sharing what a result can—and cannot—tell us.</p></div><div class="publication-card"><span class="pub-mark">IEEE<br>RESEARCH</span><div><span class="pub-kicker">PUBLICATION · FEATURE ENGINEERING</span><h3>Comparative Study of Movie Recommendation Systems</h3><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Read the paper ↗</a><a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">SourceCode ↗</a><a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate ↗</a></div></div></div></section>
+<section class="section shell reveal" aria-label="Education"><span class="section-no">05 / EDUCATION</span><h2>Computer science.<br><em>Systems thinking.</em></h2><p class="section-intro">M.S., Computer Science · Illinois Institute of Technology<br>B.S., Computer Science · National Institute of Technology Calicut</p></section>
+<section class="closing shell reveal" id="contact"><span class="section-no">06 / NEXT CHALLENGE</span><h2>Build infrastructure<br><em>people can depend on.</em></h2><p>Thoughtful design, careful measurement, and a deep respect for the data entrusted to a system.</p><div class="closing-actions"><a href="mailto:devpatna2017@gmail.com" class="button button-primary">Start a conversation <span>↗</span></a><a href="https://github.com/devthedevil" target="_blank" rel="noreferrer" class="text-link">View my GitHub profile <span>↗</span></a></div><div class="closing-orbit" aria-hidden="true"></div></section>
+</main>
+<script src="script.js"></script>
+</body></html>
